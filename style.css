@@ -1,7 +1,10 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 body{
-    font-family: Hanken Grotesk;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+body p{
+    font-size: 18px;
 }
 .result{
     display: flex;
@@ -15,25 +18,32 @@ body{
     border-radius: 2em;
     color: white;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 #score{
-    background-color: hsl(249, 40%, 40%);
-    border-radius: 1em;
+    background-color: rgba(42, 15, 116, 0.5);
+    border-radius: 50em;
 }
+#score h1{
+    font-size: 4em;
+}
+
 #component-2{
     background-color: rgb(255, 253, 253);
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 5px 5px 1em  rgb(83, 79, 79);
     border-radius: 2em;
-    width: 50%;
+    width: 100%;
 }
 
 #continue{
-    background-color: hsl(248, 41%, 47%);
+    background-color: hsl(249, 58%, 9%);
     border-radius: 2em;
     padding: 1em 0 1em 0;
     margin: 2em;
+}
+#continue:active{
+    background-color: hsl(248, 41%, 47%);
 }
 
 #continue a{
@@ -44,4 +54,51 @@ body{
 }
 .subjects{
     display: flex;
+    margin: 1em;
 }
+
+#reaction h4{
+    color: rgb(232, 63, 63);
+}
+#reaction{
+    background-color: rgba(240, 184, 184, 0.9);
+    border-radius: 1em;
+}
+#memory h4{
+    color: rgb(179, 170, 49);
+}
+#memory{
+    background-color: rgb(245, 237, 188);
+    border-radius: 1em;
+}
+#verbal h4{
+    color: rgba(79, 170, 70, 0.9);
+}
+#verbal{
+    background-color: rgba(189, 240, 184, 0.9);
+    border-radius: 1em;
+}
+#visual h4{
+    color: hsl(234, 85%, 45%);
+}
+#visual{
+    background-color: rgba(184, 220, 240, 0.9);
+    border-radius: 1em;
+}
+
+
+/*CSS rule for phones*/
+@media only screen and (max-width: 375px) {
+    body{
+        display: grid;
+        grid-template-columns: 100%;
+    } 
+    /* .result{
+        width: 100%;
+    }*/
+    #component-1, #component-2{
+        display: block;
+        width: 100%;
+    }
+    
+}  
