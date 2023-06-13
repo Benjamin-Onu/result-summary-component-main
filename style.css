@@ -2,6 +2,7 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 body{
     font-family: 'Hanken Grotesk', sans-serif;
+    background-color: rgb(219, 219, 239);
 }
 body p{
     font-size: 18px;
