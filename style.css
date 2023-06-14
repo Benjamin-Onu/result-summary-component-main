@@ -18,8 +18,7 @@ body p{
     background-color: hsl(248, 41%, 47%);
     border-radius: 2em;
     color: white;
-    align-items: center;
-    width: 100%;
+    margin: 0 auto;
 }
 #score{
     background-color: rgba(42, 15, 116, 0.5);
@@ -34,7 +33,7 @@ body p{
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 5px 5px 1em  rgb(83, 79, 79);
     border-radius: 2em;
-    width: 100%;
+    /* width: 100%; */
 }
 
 #continue{
@@ -94,12 +93,27 @@ body p{
         display: grid;
         grid-template-columns: 100%;
     } 
-    /* .result{
-        width: 100%;
-    }*/
-    #component-1, #component-2{
-        display: block;
-        width: 100%;
+    .result{
+        display: grid;
+        grid-template-rows: 50% 50%;  
+        margin: 0;
+        padding: 0;
+        width: 375px;
+    }
+    .attribution{
+        display: flex;
+        align-items: center;
+    }
+    #component-1{
+        border-radius: 0 0 2em 2em;
+        position: relative;
+        top: 1em;
+        width: 375px;
+    }
+    #component-2{
+        border-radius: 0;
+        padding-bottom: 6em;
+        width: 375px;
     }
     
 }  
