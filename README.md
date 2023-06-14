@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./finished-work.jpg)
+![](finished-work.jpg)
 
 ### Links
 
