@@ -10,7 +10,9 @@ body p{
 .result{
     display: flex;
     justify-content: center;
-    margin: 5em 20em 0 20em;
+    /* display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5em 20em 0 20em; */
     padding: 5em;
 }
 
@@ -19,22 +21,41 @@ body p{
     border-radius: 2em;
     color: white;
     margin: 0 auto;
+    padding: 0 3em;
+    position: relative;
+    left: 2em;
+    right: 5em;
 }
-#score{
-    background-color: rgba(42, 15, 116, 0.5);
-    border-radius: 50em;
-}
-#score h1{
-    font-size: 4em;
-}
-
 #component-2{
     background-color: rgb(255, 253, 253);
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 5px 5px 1em  rgb(83, 79, 79);
     border-radius: 2em;
-    /* width: 100%; */
+    padding: 0 3em;
+    position: relative;
+    right: 15em;
 }
+
+#component-1 h3, #component-1 h2, #component-1 p{
+    margin: 0 auto;
+    padding: 1em 0 3em 3em;
+}
+#score{
+    background-color: rgba(42, 15, 116, 0.5);
+    border-radius: 100%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 200px;
+    height: 170px;
+}
+#score h1{
+    font-size: 4em;
+    padding: 0 1em;
+}
+#score p{
+    padding: 0 3em;
+}
+
 
 #continue{
     background-color: hsl(249, 58%, 9%);
@@ -55,6 +76,14 @@ body p{
 .subjects{
     display: flex;
     margin: 1em;
+}
+.subjects p{
+    display: flex;
+    justify-content: flex-end;
+}
+.subjects h4{
+    display: flex;
+    justify-content: flex-start;
 }
 
 #reaction h4{
@@ -108,12 +137,25 @@ body p{
         border-radius: 0 0 2em 2em;
         position: relative;
         top: 1em;
-        width: 375px;
+        padding: 0 1.5em;
+        left: 0;
+        right: 0;
     }
     #component-2{
         border-radius: 0;
-        padding-bottom: 6em;
-        width: 375px;
+        padding: 0 0 6em 0;
+        right: 0;
     }
     
 }  
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    #component-1{
+        position: relative;
+        left: 2em;
+        right: 5em;
+    }
+    #component-2{
+        position: relative;
+        right: 15em;
+    }
+}
