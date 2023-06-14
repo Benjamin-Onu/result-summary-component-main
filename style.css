@@ -10,9 +10,6 @@ body p{
 .result{
     display: flex;
     justify-content: center;
-    /* display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 5em 20em 0 20em; */
     padding: 5em;
 }
 
@@ -63,7 +60,7 @@ body p{
     padding: 1em 0 1em 0;
     margin: 2em;
 }
-#continue:active{
+#continue:active, #continue:hover{
     background-color: hsl(248, 41%, 47%);
 }
 
@@ -75,17 +72,19 @@ body p{
 }
 .subjects{
     display: flex;
+    justify-content: space-between;
     margin: 1em;
 }
+.subjects div{
+    display: flex;
+    justify-content: space-between;
+}
+.subjects div svg {
+    margin: 20px 10px 0 0;
+}
 .subjects p{
-    display: flex;
-    justify-content: flex-end;
+    margin-right: 10px;
 }
-.subjects h4{
-    display: flex;
-    justify-content: flex-start;
-}
-
 #reaction h4{
     color: rgb(232, 63, 63);
 }
